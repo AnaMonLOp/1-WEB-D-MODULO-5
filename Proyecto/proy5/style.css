@@ -1,0 +1,66 @@
+:root {
+    --primary: #f6ebeb;
+    --radius: 1rem;
+    --title: #fff; 
+    --color: #69C8ECFF;
+    --segundosTitulos: #434242;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    background-color: var(--color);
+    padding: 2rem;
+} 
+
+h1{ 
+  color: var(--title);
+  margin: 10px;
+}
+
+
+form {
+  width: 45%;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--primary);
+  border: 1px solid #fffdfd;
+  border-radius: 15px;
+}
+
+label {
+  display: block;
+}
+
+.titulos{
+  font-weight: bold;
+  color: var(--segundosTitulos);
+  font-size: large;
+  margin-bottom: 5px;
+
+}
+
+
+input, select, button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn{
+  background-color: pink;
+}
