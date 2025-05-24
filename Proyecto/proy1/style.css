@@ -1,0 +1,95 @@
+:root {
+    --primary: #B38867;
+    --secundary: #625D71;
+    --radius: .5rem;
+    --title: #f2eeed;
+    --card-bg: #F3E9DC;
+    --list-text: #111111;
+    --preparando-bg: #895737;
+    --preparando-text: #F7EBD3;
+    --completado-bg: #5E3023;
+    --completado-text: #FFDBAF;
+    font-family: system-ui, sans-serif;
+
+}
+ 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    background-color: var(--primary);
+    padding: 2rem;
+}
+
+/* --------  Layout principal  -------- */
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--title);
+    margin-bottom: 20px;
+}
+
+#addOrderBtn{
+    background: var(--secundary);
+    color: #ffffffe6;
+    padding: .8rem 1.5rem;
+    border: none;
+    border-radius: var(--radius);
+    font-weight: 550;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: column;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+li {
+    background: var(--card-bg);
+    color: var(--list-text);
+    padding: 0.8rem 0.6rem;
+    border-radius: var(--radius);
+    font-size: .85rem;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+.preparando {
+    background-color: var(--preparando-bg);
+    color: var(--preparando-text);
+    animation: pulse 1s infinite;
+}
+
+.completado {
+    background-color: var(--completado-bg);
+    color: var(--completado-text);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
