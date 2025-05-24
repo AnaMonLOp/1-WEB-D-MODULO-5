@@ -1,0 +1,60 @@
+:root {
+    --primary: #FAFD7CFF;
+    --radius: 1rem;
+    --title: #69C8ECFF; 
+    --color: #E89242FF;
+    --list-text: #111111;
+    font-family: system-ui, sans-serif;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    background-color: var(--color);
+    padding: 2rem;
+}
+
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--title);
+    margin-bottom: 10px;
+}
+
+.btn button {
+    background: var(--primary);
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#img{
+    margin-top: 0;
+    width: 250px;
+    height: 250px;
+}
+
+.box{
+    margin-top: 2rem;
+    justify-self: center;   
+}
